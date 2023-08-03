@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+// Mengimport plugin VitePWA
 import { VitePWA } from 'vite-plugin-pwa';
 import tailwindConfig from './tailwind.config';
 
@@ -35,6 +36,7 @@ export default defineConfig({
                 background_color: '#F5F6F7',
                 scope: '/',
                 start_url: '/',
+                // menambahkan icon
                 icons: [
                     {
                         src: '/iconPWA.png',
@@ -43,6 +45,7 @@ export default defineConfig({
                         purpose: "any maskable"
                     }
                 ],
+                // menambahkan shortcut ke homescreen
                 shortcuts: [
                     {
                         name: 'My Shortcut',
