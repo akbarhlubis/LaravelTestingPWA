@@ -42,6 +42,22 @@ export default defineConfig({
                         type: 'image/png',
                         purpose: "any maskable"
                     }
+                ],
+                shortcuts: [
+                    {
+                        name: 'My Shortcut',
+                        short_name: 'Shortcut',
+                        description: 'A shortcut that opens the app',
+                        url: '/',
+                        icons: [
+                            {
+                                src: '/iconPWA.png',
+                                sizes: '512x512',
+                                type: 'image/png',
+                                purpose: "any maskable"
+                            }
+                        ]
+                    }
                 ]
             }
         })
